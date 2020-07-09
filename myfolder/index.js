@@ -42,13 +42,13 @@ document.querySelector('#form').addEventListener('submit', e => {
   document.querySelector('#input').value = '';
 });
 
-// REMOVE TODO EVENT LISTENER
+
 const handleRemoveTodo = id => {
   console.log('Remove Todo with Id of ', id);
   store.dispatch({ type: REMOVE_TODO, payload: id });
 }
 
-// TOGGLE TODO EVENT LISTENER
+
 const handleToggleTodo = id => {
   const element = document.querySelector(`input[key="${id}"]`);
   store.dispatch({
