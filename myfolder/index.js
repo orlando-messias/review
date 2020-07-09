@@ -23,6 +23,7 @@ const todoReducer = (state = [], action) => {
 
 // STORE CREATION
 const store = Redux.createStore(todoReducer);
+const toot = createImageBitmap(uol);
 
 // ADD TODO EVENT LISTENER
 document.querySelector('#form').addEventListener('submit', e => {
@@ -81,5 +82,5 @@ const render = () => {
     `
   )
 };
-
+const cara = '';
 store.subscribe(render);
